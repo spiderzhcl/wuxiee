@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div class="rich_media_content" id="js_content">
+            <p >
+                可视分析技术已经发展了近十年。在这些年间，人们研究了大量的可视分析方法和案例，发表了不少研究论文。然而，对于一些基本问题，人们依然没有明确的答案。例如，一个基本的可视分析流程是怎样的？
+                一个可视分析系统应该包含哪几个组件？如何评价和比较不同的可视分析系统？在VAST’2014的一篇论文中[1]，Sacha等人提出了一个可视分析模型，系统性的回答了以上问题。</p>
+            <p >如图1所示，他们的模型包含左边计算机的部分和右边人的部分。在计算机部分中，数据被绘制为可视化图表，同时也通过模型进行整理和挖掘。可视化图表既可以显示原始数据的特性，也可以显示模型的结果。用户也可以基于可视化图表来对模型进行调整，指导建模过程。在人的部分中，作者提出了三层循环：探索循环、验证循环和知识产生循环。在探索循环中，人们通过模型输出和可视化图表寻找数据中可能存在的模式，基于此采取一系列行动，例如改变参数，去产生得到新的模型输出和新的可视化图表。这样做的动机在验证循环之中：
+                <span style="color: rgb(79, 129, 189);">人们通过模式洞察到数据的特点，产生可能的猜测。这些猜测的验证正是基于探索循环中的行动。最后，在验证循环之上有知识循环，不断的收集验证循环中已被验证的猜测，总结为知识。</span></p>\n<p style="white-space: normal;"><img data-src="http://mmbiz.qpic.cn/mmbiz/4nqn1KN0cA58OVZsPl9Cyw90DUGEibSvKMvzTbLuZ0wJl5mKozPicicqB9VZA55ENTxicWt1w5WkSajEcLtFRU517A/0" class="" id="c1416449996656" data-ratio="0.3148148148148148" data-w="648" style="max-width: 648px; border: 0px; max-height: 15000px;"  /></p>\n<p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px 0px 10px; text-align: center;"><br  /></p>
+            <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px 0px 10px;">                        图 1. 可视分析中的知识产生模型</p>
+            <p >本模型的提出是建立在已有的各种模型的基础之上的，如图2所示。例如，之前的信息可视化流程图描述了如何从数据产生可视化图表，数据挖掘流程图则描述了如何对数据进行预处理和建模并最终得到分析结果。
+                <span style="color: rgb(79, 129, 189);">之前的交互步骤模型描述了人在分析过程中的评价、目标产生和执行步骤，意义构建模型则描述了人在整个分析过程中对问题理解的加深。它们在本模型中被分解为三层循环。</span>此外，众多的交互词汇系统的描述了探索循环中的行为。</p>
+            <p style="white-space: normal;"><img data-src="http://mmbiz.qpic.cn/mmbiz/4nqn1KN0cA58OVZsPl9Cyw90DUGEibSvK1dEf3OuPXiaMx0SYKspkx9aqSXdjxlMfhdnLwiaUS8tQzfNKtocdmRIw/0" class="" id="c1416449996657" data-ratio="0.5" data-w="648" style="max-width: 648px; height: 450px; border: 0px; max-height: 15000px; width: 900px;"  /></p>
+            <p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px 0px 10px; text-align: center;">图 2. 本模型和已有模型之间的关系</p>
+            <p ><br  /></p>
+            <p >作者利用本模型对一些实际的可视分析系统进行了评价和比较，如图3所示。Jigsaw是一款免费的文本可视分析系统[2]，它可以读入文本数据，自动提取实体，建立主题模型，因此强于建模。此外，它提供了一系列可视化图表来显示文本的各种特征，因此也强于可视化。它的许多可视化，例如文件聚类视图，是基于主题模型的，因此可以算是对模型的可视化。<span style="color: rgb(79, 129, 189);">用户可以在多种视图之间切换，改变各种视觉特性，因此它很好的支持了探索循环。此外，它还提供了tablet视图，允许用户记录自己的发现，并整理归类，提供了一定的验证循环支持。</span>然而，Jigsaw不支持对原始数据预处理，也不太支持模型参数选择。</p>
+            <p >Weka是一款免费的数据挖掘系统 [3]，它允许用户对数据进行一系列的预处理，例如数据删除、离散化、文本分词等等，同时支持大量的数据挖掘算法，涵盖了各种分类、聚类、关联规则挖掘模型。但是该系统支持的可视化相当有限，例如显示散点图矩阵，或者显示决策树结果、显示神经网络结构。另外，用户探索仅限于更换预处理方法和更换模型，功能较为简单。用户无法整理自己的发现，因此该系统对验证循环的支持并不好。</p>
+            <p >Tableau是一款商业化的可视化系统 [4]，<span style="color: rgb(79, 129, 189);">它允许用户通过漂亮的UI来预处理数据，通过简单的拖拽来设计各种可视化图表。但是一直以来，它支持的模型很有限，直到今年，Tableau支持了R语言，它才真正用于建模功能。Tableua支持灵活的数据探索。它还支持spreadsheet和storyboard等强大的功能，可以生成MLV视图和类似powerpoint的演示界面。这些都是对验证循环的支持。</span></p>
+            <p >nSpace是一款商业化的文本分析系统 [5]，<span style="color: rgb(79, 129, 189);">虽然它对数据预处理和数学模型的支持很弱，但是它提供了多种可视化图表显示数据的不同特征。这些图表可以较好的支持数据探索循环。最为与众不同的是，nSpace提供了sandbox界面用于组织用户的发现，并生成结果报告。该功能比Jigsaw的tablet和Tableau的storyboard更为强大，能较好的支持验证循环。</span></p>
+            <p style="white-space: normal;"><img data-src="http://mmbiz.qpic.cn/mmbiz/4nqn1KN0cA58OVZsPl9Cyw90DUGEibSvKhh1RZKkz2zXCGicjiaI2SfZLiayOe7pV3yKkIxqxlLTbRcORibIYuZweMA/0" class="" id="c1416449996658" data-ratio="0.7006172839506173" data-w="648" style="max-width: 648px; border: 0px; max-height: 15000px;"  /></p><p style="margin-top: 0px; margin-bottom: 0px; white-space: normal; padding: 0px 0px 10px; text-align: center;">图 3. 利用本模型对不同的可视分析系统进行评价和比较</p><p ><br  /></p>
+            <p >作者也谈到，本模型具有一些局限性，比如未考虑多个分析人员之间的协作与交流，未考虑不同可视分析系统之间的切换，未考虑分析人员和领域专家、政府官员之间的沟通，未考虑动态变化的流数据。这些问题可以进一步研究。</p>
+            <p >基于此模型，作者展望了未来可视分析的研究方向。例如，在探索循环中，研究者可以更多的考虑通过可视化与数学模型进行交互的技术，也可以考虑如何引导用户快速系统的发现数据中的模式，或者如何自动检测模式。在验证循环中，研究者可以如何保存之间的探索结果，以方便回溯，验证其可靠性。研究者可以考虑如何组织不同的探索结果，辅助用户产生假设，甚至自动产生假设。在知识发现循环中，研究者可以做的比较少。毕竟，知识发现只在人脑中。但研究者可以提供更多更方便的可视化视图和数学模型，方便用户从多个角度考虑同一个数据、同一个问题。这样，也许用户更容易最终得到有用的知识。</p>
+        </div>
+    </body>
+</html>

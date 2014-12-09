@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="../css/customize-template.css">
+        <script src="../js/bootstrap/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="../js/vendor/dateFormat.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/index.html" class="brand"><i class="icon-home">大数据、微体验</i></a>
+                    <div id="app-nav-top-bar" class="nav-collapse">
+                        <ul class="nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">TimeOut<b class="caret hidden-phone"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="custom-view.html">Custom View</a></li>
+                                    <li><a href="login.html">Login Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Monitor
+                                    <b class="caret hidden-phone"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../emar/dmapredis.html">DmapRedis</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/rtbredis.html">RtbRedis</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/rtbtimeout.html">RtbTimeout</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/cost.html">Cost</a></li><li><a href="../emar/rtinfo.html">Rt Info</a></li><li><a href="../emar/users.html">人群</a></li><li><a href="aaaaaaaaaaaaaaaaa"></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="#">&copy; 京ICP备13034177号-1</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="height: 70px;"></div>
+
+        <section class="page container">
+            <div class="row">
+                <div class="span4">
+                    <div class="blockoff-right">
+                        <ul id="person-list" class="nav nav-list">
+                            <li class="nav-header"></li>
+                            <li class="">
+                                <a href="../article/eharmony.html">
+                                    <i class="icon-chevron-right pull-right"></i>
+                                    <b>美国最大婚恋网站eHarmony利用Hadoop、OpenStack重构自己</b>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../article/dataview.html">
+                                    <i class="icon-chevron-right pull-right"></i>
+                                    <b>数据可视分析中的知识产生模型</b>
+                                </a>
+                            </li>
+                            <li class="">
+                                <a href="../article/jdbigdata.html">
+                                    <i class="icon-chevron-right pull-right"></i>
+                                    <b>京东大数据基础架构与创新应用</b>
+                                </a>
+                            </li>
+
+                            <li class="">
+                                <a href="../article/bianqian.html">
+                                    <i class="icon-chevron-right pull-right"></i>
+                                    <b>中国大数据六大技术变迁记</b>
+                                </a>
+                            </li>
+
+                            <li class="active">
+                                <a href="../article/xingneng.html">
+                                    <i class="icon-chevron-right pull-right"></i>
+                                    <b>大型网站的灵魂——性能</b>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="span12">
+                    <div class="detail">
+                        <h1 class="title">大型网站的灵魂——性能</h1>
+                        <h4>
+                            <div class="tit_bar">
+                                时间：<span class="ago">2014-11-18</span>|
+                                资料来源<span class="ago">互联网</span>
+                            </div>
+                        </h4>
+                        <div class="summary">
+                            <input type="hidden" id="article_description" name="article_description" value="大型网站打造并不是件容易的事情，即使是从小开始慢慢迭代。从理论和实践两个方面进行讲解。">
+                            <script type="text/javascript" charset="utf-8">
+                                (function() {
+                                    var _w = 22, _h = 16;
+                                    var article_description = $("#article_description").val();
+                                    var param = {
+                                        url: location.href,
+                                        type: '3',
+                                        count: '', /**是否显示分享数，1显示(可选)*/
+                                        appkey: '', /**您申请的应用appkey,显示分享来源(可选)*/
+                                        title: article_description, /**分享的文字内容(可选，默认为所在页面的title)*/
+                                        pic: '', /**分享图片的路径(可选)*/
+                                        ralateUid: '', /**关联用户的UID，分享微博会@该用户(可选)*/
+                                        language: 'zh_cn', /**设置语言，zh_cn|zh_tw(可选)*/
+                                        rnd: new Date().valueOf()
+                                    }
+                                    var temp = [];
+                                    for (var p in param) {
+                                        temp.push(p + '=' + encodeURIComponent(param[p] || ''))
+                                    }
+                                    document.write('<iframe allowTransparency="true" frameborder="0" scrolling="no" src="http://hits.sinajs.cn/A1/weiboshare.html?' + temp.join('&') + '" width="' + _w + '" height="' + _h + '"></iframe>')
+                                })()
+                            </script></div>
+                        <div class="con news_content">
+                            <p>在前一篇随笔
+                                <a href="#" target="_blank">大型网站系统架构的演化</a>中，介绍了大型网站的演化过程，期间穿插了一些技术和手段，我们可以从中看出一个大型网站的轮廓，但想要掌握设计开发维护大型网站的技术，需要我们一步一步去研究实践。所以我打算写一个系列，从理论到实践讲述大型网站的点滴，这也是一个共同学习的过程，希望自己能坚持下去。系列大概会分为两部分，理论和实践，理论部分尽量通俗易懂，也要讲一些细节。实践部分会抽取一些技术做实践，将方法、解决问题过程分享出来。本文将讲述大型网站中一个重要的要素，性能。</p>
+
+                            <h2>什么是性能</h2>
+
+                            <p>有人说性能就是访问速度快慢，这是最直观的说法，也是用户的真实体验。一个用户从输入网址到按下回车键，看到网页的快慢，这就是性能。对于我们来说，需要去挖掘这个过程，因为这决定我们怎么去做性能优化。</p>
+                            <p><b>这中间发生了什么？</b>
+
+                            </p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a3dc66a790.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a3dc66a790_middle.jpg?_=1796" border="0" style="float: none; margin: 0px;" alt="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>用户访问网站的整个流程：用户输入网站域名，通过DNS解析，找到目标服务器IP，请求数据经互联网达到目标服务器，目标服务器收到请求数据，进行处理（执行程序、访问数据库、文件服务器等）。处理完成，将响应数据又经互联网返回给用户浏览器，浏览器得到结果进行计算渲染显示给用户。</p>
+                            <p><b>我们把整个过程，分为三段路径：</b>
+
+                            </p>
+                            <p></p>
+                            <ul>
+                                <li>第一段在用户和浏览器端，主要负责发出用户请求，以及接受响应数据进行计算渲染显示给用户；</li>
+                                <li>第二段在网络上，负责对请求数据、响应数据的传输；</li>
+                                <li>第三段在网站服务器端，负责对请求数据进行处理（执行程序、访问数据库、文件等），并将结果返回；</li>
+                            </ul>
+                            <p></p>
+
+                            <h2>第一路径</h2>
+
+                            <p>第一路径花费的时间包括输入域名发起请求的时间和浏览器收到响应后计算渲染的时间。</p>
+                            <p><b>输入域名发起请求，实质过程是：</b>
+
+                            </p>
+                            <p></p>
+                            <ol>
+                                <li>用户在浏览器输入要访问的网站域名；</li>
+                                <li>本地DNS请求网站授权的DNS服务器对域名进行解析，并得到解析结果即IP地址（并将IP地址缓存起来）。</li>
+                                <li>向目标IP地址发出请求。</li>
+                            </ol>
+                            <p></p>
+                            <p>从这个过程我们可以看到，优化的地方主要是减少DNS解析次数，而如果用户浏览器设置了缓存，则再第二次访问相同域名的时候就不会去请求DNS服务器，直接用缓存中的IP地址发出请求。因此这个过程主要取决于浏览器的设置。现在主流的浏览器默认设置了DNS的预取功能（DNS
+                                Prefetch），当然你也可以主动告知浏览器我的网站需要做DNS预取：</p>
+                            <p></p><div class="dp-highlighter bg_html"><div class="bar"><div class="tools"><a href="#" class="ViewSource" title="view plain" onclick="dp.sh.Toolbar.Command('ViewSource', this);
+                                            return false;"></a><div style="position: absolute; left: 278px; top: 1757px; width: 18px; height: 18px; z-index: 99;"><embed id="ZeroClipboardMovie_1" src="" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="18" height="18" name="ZeroClipboardMovie_1" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=1&amp;width=18&amp;height=18" wmode="transparent"></div></div></div><ol start="1" class="dp-xml"><li class="alt"><span><span class="tag">&lt;</span><span class="tag-name">meta</span><span>&nbsp;</span><span class="attribute">http-equiv</span><span>=</span><span class="attribute-value">"x-dns-prefetch-control"</span><span>&nbsp;</span><span class="attribute">content</span><span>=</span><span class="attribute-value">"on"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li></ol></div><pre class="html" code_snippet_id="477967" snippet_file_name="ptcms_1412058743_0.html" name="code" style="display: none;">&lt;meta http-equiv="x-dns-prefetch-control" content="on" /&gt;</pre>
+
+                            <p><meta http-equiv="x-dns-prefetch-control" content="on" />  </p>
+                            <p><b>浏览器将数据进行计算渲染的过程：</b>
+
+                            </p>
+                            <p></p>
+                            <ol>
+                                <li>浏览器解析响应数据；</li>
+                                <li>浏览器创建DOM树；</li>
+                                <li>浏览器下载CSS样式，并应用到DOM树，进行渲染；</li>
+                                <li>浏览器下载JS文件，开始解析执行；</li>
+                                <li>显示给用户。</li>
+                            </ol>
+                            <p></p>
+                            <p>从这个过程，我们可以找出不少可以优化的地方。首先我们可以尽量控制页面大小，使得浏览器解析的时间更短；并且将多个CSS文件、JS文件文件合并压缩减少文件下载的次数和大小；另外注意将CSS放在页面前面，JS访问页面后面，这样便于页面首先能渲染出来，再执行js脚本，对于用户来说有更好的体验。最后我还可以设置浏览器缓存，下次访问时从缓存读取内容，减少http请求。</p>
+                            <p></p><div class="dp-highlighter bg_html"><div class="bar"><div class="tools"><div style="position: absolute; left: 278px; top: 2133px; width: 18px; height: 18px; z-index: 99;"><embed id="ZeroClipboardMovie_2" src="http://csdnimg.cn/public/highlighter/ZeroClipboard.swf?e8a7c9a" loop="false" menu="false" quality="best" bgcolor="#ffffff" width="18" height="18" name="ZeroClipboardMovie_2" align="middle" allowscriptaccess="always" allowfullscreen="false" type="application/x-shockwave-flash" pluginspage="http://www.macromedia.com/go/getflashplayer" flashvars="id=2&amp;width=18&amp;height=18" wmode="transparent"></div></div></div><ol start="1" class="dp-xml"><li class="alt"><span><span class="tag">&lt;</span><span class="tag-name">meta</span><span>&nbsp;</span><span class="attribute">http-equiv</span><span>=</span><span class="attribute-value">"Cache-Control"</span><span>&nbsp;</span><span class="attribute">content</span><span>=</span><span class="attribute-value">"max-age=5"</span><span>&nbsp;</span><span class="tag">/&gt;</span><span>&nbsp;&nbsp;</span></span></li></ol></div><pre class="html" code_snippet_id="477967" snippet_file_name="ptcms_1412058743_1.html" name="code" style="display: none;">&lt;meta http-equiv="Cache-Control" content="max-age=5" /&gt;</pre>
+
+                            <p></p>
+                            <p>该代码说明了浏览器启用了缓存并在5秒内不会再次访问服务器。注意缓存的设置需要结合你的业务特性来适当配置。</p>
+                            <p>以下是京东商城的HTML简图：</p>
+                            <p>css样式放在html前面，并且进行了合并。</p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a3ec47938b.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a3ec47938b.jpg" border="0" style="width: 618px; height: 242px;">
+                                </a>
+                                <br>
+                            </p>
+                            <p>大多数的JS文件放在页尾。
+                                <br>
+                            </p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a3efe56362.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a3efe56362.jpg" border="0" style="width: 659.8983050847457px; height: 126px;">
+                                </a>
+                                <br>
+                            </p>
+
+                            <h2>第二路径</h2>
+
+                            <p>第二路径在网络上，花费的时间同样包括请求数据的传输时间和响应数据的传输时间，这个两个时间取决于数据传输的速度，这里我们要讲一个名词“带宽”。什么是带宽，我们经常说带宽10M，20M是什么意思？我的带宽20M，这意味着什么？我们知道带宽速度分为上行、下行速度，也就是上传和下载的速度。带宽20M对于用户来说则是下载速度20M（20×1024×1024比特率），换算成字节20M/8=2.5M。也就是说20M的带宽下载速度理论可达2.5M/s，而对于家庭用户而言上传速度一般比下载速度小的多，大约是不到十分之一。而对于网站服务器（企业用户）来说，则不然，一般上行速度等于下载速度。这也是运营商根据实际需求分配的，毕竟用户的主要需求是下载数据，而不是上传数据。</p>
+                            <p>整个流程从传输方式看就是：用户发送请求数据（上传），网站服务器接受请求数据（下载），网站服务器返回响应数据（上传），用户接受响应数据（下载）。对于用户来说，上传数据是很小的（Url参数），而下载数据是较大的（响应数据）；对于服务器来说，下载数据是很小的（url参数），上传数据是较大（响应数据）。理解了这个，我们可以解释为什么有时用户反映为什么自己的带宽足够，但打开某些网站仍然很慢，就是因为尽管用户的下载速度很快，但网站服务器的上传速度很慢，这就像一个抽水管和一个出水管，不管抽水管再大，但出水管很小，同样抽到的水量是有限的。了解了这个原理我们来看怎么提高数据传输的速度，首先用户的上传、下载速度我们是无法决定的，我们能决定的是网站服务器的上传、下载速度，所以我们可以做的是适当的增加服务器带宽（带宽是很贵的，盲目的增加只会增加不必要成本）。购买合适的带宽需要根据网站业务特性、规模以及结合运维人员的经验来选择。通常可以考虑的算法，即根据一次响应数据的大小，乘以PV数，除以对应的高峰时间段，从而大致估算出网站带宽的需求。</p>
+                            <p>下面我们继续进一步研究第二路径：</p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a3f62b5f2a.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a3f62b5f2a_middle.jpg" border="0" style="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>上图表示用户访问网站服务器时网络的大致情况，从图上可以看出假设网站服务器从电信网络接入，而用户A作为电信的宽带用户，则可以通过电信骨干网快速的访问到网站服务器。用户B,用户C作为移动和联通用户需要通过运营商的互联互通经过较长路径才能访问到服务器。</p>
+                            <p><b>针对这种情况，我们可以采取以下方法来优化：</b>
+
+                            </p>
+                            <p></p>
+                            <ol>
+                                <li>在各运营商发达的地区的IDC（互联网数据中心，可以理解成机房）部署网站服务器，各运营商的用户即可通过各自的骨干网访问服务器。</li>
+                                <li>购买代理服务，也就是原来联通用户需要通过联通骨干网——&gt;联通互联互通路由器——&gt;电信骨干网——&gt;网站服务器的过程。通过代理服务，代理服务器直连到电信骨干网，访问网站服务器。</li>
+                                <li>在主要地区城市购买CDN服务，缓存对应的数据，用户可先从最近的CDN运营商获取请求数据。</li>
+                            </ol>
+                            <p></p>
+
+                            <h2>第三路径</h2>
+
+                            <p>第三路径主要是网站服务器内部处理的过程，当中包括执行程序、访问文件、数据库等资源。</p>
+                            <p><b>这是对于我们来说最可以发挥的地方：</b>
+
+                            </p>
+                            <p></p>
+                            <ul>
+                                <li>使用缓存，根据需要使用本地缓存或分布式缓存；</li>
+                                <li>使用异步操作，这种方式不仅可以提高性能，也提高了系统的扩展性；</li>
+                                <li>代码优化；</li>
+                                <li>存储优化；</li>
+                            </ul>
+                            <p></p>
+                            <p><b>缓存</b>
+
+                            </p>
+                            <p>如果缓存数据较少，可以利用OSCache实现本地缓存：</p>
+                            <p style="text-align: center;">
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a3ff2ca74f.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a3ff2ca74f_middle.jpg" border="0" style="width: 220.99999999999997px; height: 217px; float: none; margin: 0px;" alt="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>当缓存数据过多时，利用Memcached实现分布式缓存：
+                                <br>
+                            </p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a40331d8f7.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a40331d8f7_middle.jpg" border="0" style="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>Memcached实现分布式缓存，缓存服务器之间是互不通信的，也就是我们可以方便的通过增加Memcached服务器对系统进行扩展。
+                                <br>
+                            </p>
+                            <p><b>异步操作</b>
+
+                                <br>
+                            </p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a40721bbf1.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a40721bbf1_middle.jpg" border="0" style="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>使用同步请求的方式，在高并发的情况下，会对数据库造成很大的压力，也会让用户感觉响应时间过长。异步请求方式，则可以快速的对用户做出响应，而具体的数据库操作请求，则通过消息队列服务器发送给数据库服务器，做具体的插入操作。插入操作的结果则已其他方式通知客户端。例如一般在订票系统当中，出票行为就是异步完成，最终的出票结果会以邮件或其他方式告知用户。</p>
+                            <p><b>代码优化</b>
+
+                            </p>
+                            <p>这里就不在详细描述，另一篇随笔《怎样编写高质量的java代码》对代码质量和风格做过大致的介绍，有兴趣可以看一下。</p>
+                            <p><b>存储优化</b>
+
+                            </p>
+                            <p>大型网站中海量的数据读写对磁盘造成很大压力，系统最大的瓶颈还是在磁盘的读写。可以考虑使用磁盘阵列、分布式储存来改善存储的性能。</p>
+
+                            <h2>性能的指标和测试</h2>
+
+                            <p>上面通过解析用户访问网站的过程来思考怎么提高用户感知的性能，对于用户来言性能就是快和慢。但对于我们来说，不能这样简单描述，我们需要去量化他，用一些数据指标去衡量它。这里讲到几个名词：响应时间、并发量、吞吐量。</p>
+                            <p></p>
+                            <ul>
+                                <li>响应时间：就是用户发出请求到收到响应数据的时间；</li>
+                                <li>并发量：就是系统同时能处理多少用户请求；</li>
+                                <li>吞吐量：就是单位时间内系统处理的请求数量；</li>
+                            </ul>
+                            <p></p>
+                            <p>为了通俗的了解这三个概念，我们以高速公路的收费站为例子：响应时间是指一辆车经过收费站的时间，也就是车辆从进入收费站、付钱、开闸、离开收费站的时间；并发量是指这个收费站同时能通行多少辆车，可以理解为收费站的出口数量。吞吐量是指：在一段时间内，这个收费站通往了多少了车。</p>
+                            <p>这个例子不晓得恰不恰当。</p>
+                            <p><b>对于性能测试来说，基本也是围绕这些方面来测试，下图说明了性能测试的过程：</b>
+
+                            </p>
+                            <p>
+                                <a href="http://cms.csdnimg.cn/article/201409/30/542a40fbacdf6.jpg" target="_blank">
+                                    <img src="http://cms.csdnimg.cn/article/201409/30/542a40fbacdf6_middle.jpg" border="0" style="">
+                                </a>
+                                <br>
+                            </p>
+                            <p>左图表示响应时间和并发用户量的二维坐标图，从图上可以看出，并发用户量在一定量增加时，响应时间很短，并且没有太大的起伏，这表示系统目前处于日常运行期，可以很快处理用户请求（A点之前）；随着并发量的增加，系统处于请求高峰期，但仍然可以有序的处理用户请求，响应时间较日常有所增加（A、B之间）；当并发量增加到一定数量时，超过了系统的负载能力，系统处于濒临崩溃的边缘（B、C之间），响应时间严重过长，直到系统崩溃。</p>
+                            <p>右图表示吞吐量与并发用户量的二维坐标图，可以看出，随着并发用户量的增加，吞吐量逐渐增加；在并发量到达一定量时，由于系统处理能力达到最大，吞吐量增加放缓；当并发量超过系统负载时（E点），系统处理能力开始下降，不能再请求增加的用户请求，吞吐量反而降低。</p>
+
+                            <h2>小结</h2>
+
+                            <p>本文通过用户访问网站的过程，分析了三个路径过程中提高性能的想法和手段，最后介绍了描述性能的指标，并对性能测试做了简要说明。</p>
+
+                        </div>
+
+
+
+                        <div class="share"> 	 
+                            <div class="bdsharebuttonbox bdshare-button-style0-32" style="float:right;" data-bd-bind="1416405936490">
+                                <!-- a href="#" class="bds_more" data-cmd="more"></a -->
+                                <a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"></a>
+                                <a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
+                                <a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"></a>
+                                <a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"></a>
+                            </div>
+                            <script>window._bd_share_config = {"common": {"bdSnsKey": {}, "bdText": "", "bdMini": "2", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "32"}, "share": {}};
+                                with (document)
+                                    0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>  
+
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <script src="../js/bootstrap/bootstrap-transition.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-alert.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-modal.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-scrollspy.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-tab.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-tooltip.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-popover.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-button.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-collapse.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-carousel.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-typeahead.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-affix.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/bootstrap-datepicker.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/jquery-tablesorter.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/jquery-chosen.js" type="text/javascript"></script>
+        <script src="../js/bootstrap/virtual-tour.js" type="text/javascript"></script>
+    </body>
+</html>

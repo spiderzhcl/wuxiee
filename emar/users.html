@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="/css/customize-template.css">
+        <script src="/js/bootstrap/jquery-1.8.2.min.js" type="text/javascript"></script>
+        <script src="/js/vendor/dateFormat.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="navbar navbar-fixed-top">
+            <div class="navbar-inner">
+                <div class="container">
+                    <button class="btn btn-navbar" data-toggle="collapse" data-target="#app-nav-top-bar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a href="/index.html" class="brand"><i class="icon-home">大数据、微体验</i></a>
+                    <div id="app-nav-top-bar" class="nav-collapse">
+                        <ul class="nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">TimeOut<b class="caret hidden-phone"></b></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="dashboard.html">Dashboard</a></li>
+                                    <li><a href="form.html">Form</a></li>
+                                    <li><a href="custom-view.html">Custom View</a></li>
+                                    <li><a href="login.html">Login Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">System Monitor
+                                    <b class="caret hidden-phone"></b>
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <a href="../emar/dmapredis.html">DmapRedis</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/rtbredis.html">RtbRedis</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/rtbtimeout.html">RtbTimeout</a>
+                                    </li>
+                                    <li>
+                                        <a href="../emar/cost.html">Cost</a></li><li><a href="../emar/rtinfo.html">Rt Info</a></li><li><a href="../emar/users.html">人群</a></li><li><a href="aaaaaaaaaaaaaaaaa"></a>
+                                    </li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <ul class="nav pull-right">
+                            <li>
+                                <a href="#">&copy; 京ICP备13034177号-1</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-nav body-nav-horizontal body-nav-fixed">
+            <div class="container">
+                <ul>
+                    <li>
+                        <a href="rtbtimeout.html"><i class="icon-calendar icon-large"></i> RtbTimeout</a>
+                    </li>
+                    <li>
+                        <a href="dmapredis.html"><i class="icon-calendar icon-large"></i>DmapRedis</a>
+                    </li>
+                    <li>
+                        <a href="rtbredis.html"><i class="icon-calendar icon-large"></i>RtbRedis</a>
+                    </li>
+                    <li>
+                        <a href="rtinfo.html"><i class="icon-list-alt icon-large"></i> RtInfo</a>
+                    </li>
+                    <li>
+                        <a href="cost.html"><i class="icon-bar-chart icon-large"></i> Cost</a>
+                    </li>
+                </ul>
+            </div>
+            <section class="page container">
+                <div class="container">
+                    <input type="hidden" id="charttype" name="charttype" value="project" />
+                    <input type="hidden" id="charttitle" name="charttitle" value="项目人群概况" />
+
+                    <input type="hidden" id="dayrange" name="dayrange" value="2" />
+                    <a class="btn btn-primary btn-lg  pull-left" id="btnproject" role="button" onclick="fun('项目人群概况', 'project');">项目人群概况</a>
+                    <a class="btn btn-lg pull-left" id="btntime" role="button" onclick="fun('时间细分', 'time');">时间细分</a>
+                    <input type="text" id="project" name="project" value="5016" />  
+                    <input type="text" id="data" name="data" value="20141117" />
+                    <div class="pre-scrollable">
+                      <div id="bscost_div" style="height:450px;  width: 95%;border:1px solid #ccc;padding:10px;float: left"></div>
+                    </div>
+
+                </div>
+            </section>
+            <div class="container">
+                <hr>
+                <footer>
+                    <p>&copy; 京ICP备13034177号-1</p>
+                </footer>
+            </div>
+        </div>
+
+        <script src="/js/echarts/esl.js"></script>
+        <script src="/js/vendor/dmap.js"></script>
+        <script src="/js/echarts/dmapchart.js"></script>
+        <script src="/js/echarts/drawCharts.js"></script>
+        <script src="/js/bootstrap/bootstrap-dropdown.js" type="text/javascript"></script>
+        <script src="/js/bootstrap/bootstrap-button.js" type="text/javascript"></script>
+        <script src="/js/bootstrap/jquery-tablesorter.js" type="text/javascript"></script>
+        <script type="text/javascript">
+                        fun2();
+//                        setInterval(fun2, 30000);
+                        function fun(title, type) {
+                            $('#charttype').val(type);
+                            $('#charttitle').val(title);
+                            $(".btn-primary").removeClass("btn-primary");
+                            $('#btn' + type).addClass("btn-primary");
+                            fun2();
+                        }
+                        function fun2() {
+                            var typeval = $('#charttype').val();
+                            var title = $('#charttitle').val();
+							var data = $('#data').val();
+							if (typeval === undefined || typeval === 'time') {
+        						data = $('#project').val();
+    						}else{
+								data = $('#data').val();
+							}
+                            users(typeval, 'bscost_div', title,data);
+                        }
+        </script>
+    </body>
+</html>
