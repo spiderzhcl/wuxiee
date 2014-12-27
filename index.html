@@ -6,13 +6,25 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title></title>
+        <title>大数据、微体验</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        <meta property="qc:admins" content="155267444767501556375" />
+        <meta property="wb:webmaster" content="ad43e6b668f75978" />
         <link rel="stylesheet" href="/css/customize-template.css">
         <script src="/js/bootstrap/jquery-1.8.2.min.js" type="text/javascript"></script>
         <script src="/js/vendor/dateFormat.js"></script>
+        <!--必填-->
+        <meta property="og:type" content="webpage" />
+        <meta property="og:url" content="http://www.wuxiee.com/index.html" />
+        <meta property="og:title" content="大数据、微体验" />
+        <meta property="og:description" content="网页描述，将直接显示在微博里，建议完整填写，不要重复填写标题" />
+        <!--选填-->
+        <meta property="og:image" content="网页的显示图片" />
+        <meta name="weibo:webpage:create_at" content="2014-12-25 9:23:12" />
+        <meta name="weibo:webpage:update_at" content="2014-12-26 11:23:11" />
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1165007714" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101180671" data-redirecturi="http://www.wuxiee.com/qqlogin.html" charset="utf-8"></script>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -33,57 +45,17 @@
                             <li><a href="contact.html">联系我吗？</a></li>
                             <li><a href="aboutme.html">关于本站</a></li>
                             <li><a href="feedback.html">意见建议</a></li>
-                            <li><a href="#">&copy; 京ICP备13034177号-1</a></li>
+                            <li><a><span id="qqLoginBtn"></span></a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </div>
+        <script type="text/javascript">QC.Login({btnId: "qqLoginBtn"});</script>
         <div style="height: 40px;"></div>
         <div class="btn-navbar">
             <section class="page container">
                 <div class="row">
-                    <div class="span8">
-                        <fieldset>
-                            <legend><i class=" icon-large icon-dashboard">今日流量：<span id="traffic" class="traffic"></span></i></legend>
-                        </fieldset>
-                        <div class="box">
-                            <div class="box-header">
-                                <i class="icon-user"></i>
-                                <h5>欢迎、欢迎、热烈欢迎！</h5>
-                            </div>
-                            <div class="box-content">
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;我们承接各合作项目、技术咨询、定制开发（网站/应用）、Android开发、IOS开发</p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;在这里你可以随时了解到最新的技术动态，学习一些常用的技术技巧。经常来这里你将获得意想不到的收获！</p>
-                                <p>&nbsp;&nbsp;&nbsp;&nbsp;精选大数据相关热门文章，汇集大数据处理相关知识，体验大数据给工作、生活带来的便捷，掌握不同的展现手法</p>
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="box-header">
-                                <i class="icon-book"></i>
-                                <h5>Forms</h5>
-                            </div>
-                            <div class="box-content">
-                                <form class="form-inline">
-                                    <p>Login</p>
-                                    <div class="input-prepend">
-                                        <span class="add-on"><i class="icon-envelope"></i></span>
-                                        <input class="span4" type="text" placeholder="Email address">
-                                    </div>
-                                    <div class="input-prepend">
-                                        <span class="add-on"><i class="icon-key"></i></span>
-                                        <input class="span4" type="password" placeholder="Password">
-                                    </div>
-                                </form>
-                            </div>
-                            <div class="box-footer">
-                                <button type="submit" class="btn btn-primary">
-                                    <i class="icon-ok"></i>
-                                    Submit
-                                </button>
-                            </div>
-                        </div>
-                    </div>
                     <div class="span8">
                         <div class="box pattern pattern-sandstone">
                             <div class="box-header">
@@ -129,6 +101,33 @@
                             </div>
                         </div>
                     </div>
+                    <div class="span8">
+                        <div class="box">
+                            <div class="box-header">
+                                <i class="icon-large icon-dashboard"></i>
+                                <h5>今日流量：</h5>
+                            </div>
+                            <div class="box-content">
+                                <fieldset>
+                                    <legend><span id="traffic" class="traffic"></span><span><wb:like appkey="1Sl0JA" type="number"></wb:like></span></legend>
+                                </fieldset>
+                            </div>
+                        </div>
+
+                        <div class="box">
+                            <div class="box-header">
+                                <i class="icon-user"></i>
+                                <h5>欢迎、欢迎、热烈欢迎！</h5>
+                            </div>
+                            <div class="box-content">
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;我们承接各合作项目、技术咨询、定制开发（网站/应用）、Android开发、IOS开发</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;在这里你可以随时了解到最新的技术动态，学习一些常用的技术技巧。经常来这里你将获得意想不到的收获！</p>
+                                <p>&nbsp;&nbsp;&nbsp;&nbsp;精选大数据相关热门文章，汇集大数据处理相关知识，体验大数据给工作、生活带来的便捷，掌握不同的展现手法</p>
+                            </div>
+                        </div>
+
+                    </div>
+
 
                 </div>
             </section>
@@ -151,7 +150,7 @@
         <script>
             fun();
             setInterval(fun, 10000);
-            function fun(){
+            function fun() {
                 adxreq('traffic');
             }
         </script>

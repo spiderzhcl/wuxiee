@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:wb="http://open.weibo.com/wb">
+    <head>
+        <title>QQ LOGIN</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--<link rel="stylesheet" href="/css/customize-template.css">-->
+        <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="101180671"  data-callback="true" charset="utf-8"></script>
+        <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=1165007714" type="text/javascript" charset="utf-8"></script>
+    </head>
+    <body>
+        已屏蔽，<a>撤消</a>
+        <div class="container-feedback" style="border: 1px;">
+            <span>此推广内容有什么问题？</span>
+            <ul>
+                <li style="display:block;"><input type="radio" name="fb" id="fbmm_44873723_4164483_27420819" value="201" checked="checked"><label for="fb1">内容反感</label></li>
+                <li style="display:block;"><input type="radio" name="fb" id="fbmm_44873723_4164483_27420819" value="202"><label for="fb2">不相关</label></li>
+                <li style="display:block;"><input type="radio" name="fb" id="fbmm_44873723_4164483_27420819" value="203"><label for="fb3">重复显示</label></li>
+                <li style="display:block;"><input type="radio" name="fb" id="fbmm_44873723_4164483_27420819" value="204"><label for="fb4">已收藏、购买过</label></li>
+            </ul>
+            <span id="qqLoginBtn"></span><span><wb:login-button type="3,2" onlogin="login" onlogout="logout">登录按钮</wb:login-button></span>
+            <script type="text/javascript">QC.Login({btnId: "qqLoginBtn"});</script>
+        </div>
+    </body>
+</html>
